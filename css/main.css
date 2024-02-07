@@ -58,15 +58,20 @@ body {
     background: #131626 url("../imgs/hero-bg.png") no-repeat top left;
     background-size: cover;
 }
-.landing {
+.header {
+
+}
+.header .container {
     height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .menu {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 45px;
-    padding: 20px 0;
 }
 .menu .menu_list {
     display: flex;
@@ -96,11 +101,24 @@ body {
 .menu .menu_logo .logo img {
     width: 50px;
 }
+@media (max-width: 767px) {
+    .menu {
+        gap: 15px;
+    }
+    .menu .menu_list {
+        gap: 15px;
+    }
+    .menu .menu_list a {
+        font-size: 14px;
+    }
+    .menu .menu_logo .logo img {
+        width: 30px;
+    }
+}
 /* Start Header */
 /* Start Landing */
 .landing {
     position: relative;
-    min-height: calc(100vh - 92px);
     text-align: center;
 }
 .landing .container {
@@ -108,9 +126,9 @@ body {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    min-height: calc(100vh - 75px);
     /* padding: calc(100 / var(--media-breakdown)) 0 calc(70 / var(--media-breakdown)); */
-    padding: calc(100vh - 800px) 0 150px;
+    padding: calc(100vh - 800px) 0 calc(70 / var(--media-breakdown));
 }
 .landing img {
     position: absolute;
@@ -192,6 +210,17 @@ body {
     transform: rotate(-45deg);
     right: 22px;
 }
+@media (max-width: 767px) {
+    .landing img {
+        width: 500px;
+    }
+    .landing .hero_header h2 {
+        font-size: 30px;
+    }
+    .landing .hero_header h1 {
+        font-size: 80px;
+    }
+}
 /* End Landing */
 /* Start Animation */
 @keyframes load__scale {
@@ -200,7 +229,7 @@ body {
     }
     100% {
         opacity: 1;
-        letter-spacing: 25px;
+        letter-spacing: calc(10 / var(--media-breakdown));
     }
 }
 @keyframes load__fadeup {
