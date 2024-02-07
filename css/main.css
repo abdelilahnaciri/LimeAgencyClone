@@ -156,7 +156,7 @@ body {
     color: var(--main-color);
     font-size: 165px;
     text-transform: uppercase;
-    letter-spacing: 20px;
+    letter-spacing: calc(10 / var(--media-breakdown));
     font-weight: 900;
     font-family: "Futura", sans-serif;
     -webkit-text-fill-color: transparent;
