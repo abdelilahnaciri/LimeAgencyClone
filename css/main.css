@@ -260,20 +260,15 @@ body {
     transform: rotate(-45deg);
     right: calc(5 / var(--media-breakdown));
 }
-@media screen and (max-width: 767px) and (min-height: 100px) {
+/* @media (max-height: 100px) {
     .landing {
     }
     .landing img {
-        /* width: calc(200 / var(--media-breakdown)); */
+        width: calc(200 / var(--media-breakdown));
         max-width: 200px;
     }
-    /* .landing .hero_header h2 {
-        font-size: 30px;
-    } */
-    /* .landing .hero_header h1 {
-        font-size: 80px;
-    } */
-}
+
+} */
 /* End Landing */
 /* Start Animation */
 @keyframes load__scale {
