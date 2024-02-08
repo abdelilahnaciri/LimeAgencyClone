@@ -127,7 +127,7 @@ body {
 .menu .menu_list a:hover::before {
     width: 100%;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) and (orientation: landscape) {
     .menu {
         gap: 15px;
         width: 100%;
