@@ -215,7 +215,7 @@ body {
     font-weight: 900;
     font-family: "Futura", sans-serif;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: calc(1 / var(--media-breakdown)) var(--main-color);
+    -webkit-text-stroke: calc(1.5 / var(--media-breakdown)) var(--main-color);
     text-shadow: 0 0  15px;
     margin-top: 10px;
     transition-delay: var(--main-transition);
@@ -271,6 +271,11 @@ body {
         max-width: 30%;
     }
 
+}
+@media screen and (max-width: 991px) and (min-height: 100px) {
+    .landing .hero_header h1 {
+        -webkit-text-fill-color: #000;
+    }
 }
 /* End Landing */
 /* Start Animation */
