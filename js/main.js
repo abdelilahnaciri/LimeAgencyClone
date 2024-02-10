@@ -13,6 +13,20 @@ document.querySelectorAll(".menu").forEach(n => n.addEventListener("click", () =
         menuList2.removeAttribute('style');
     }
 }))
-// console.log(Boolean(menuList.style.left));
+const mainTitle = document.querySelectorAll('.main-title');
+window.addEventListener('scroll', main_titles);
 
-// console.log(Boolean(menuList.style="display: flex;"));
+main_titles();
+
+function main_titles() {
+    const triggerBottom = window.innerHeight / 5 * 4 + 100;
+    mainTitle.forEach(title => {
+        const titleTop = title.getBoundingClientRect().top;
+        if (titleTop < triggerBottom) {
+            title.classList.add('show');
+        }
+        else {
+            title.classList.remove('show');
+        }
+    })
+}
