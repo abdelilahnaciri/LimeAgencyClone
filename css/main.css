@@ -310,6 +310,7 @@ body {
 .services {
     padding-top: var(--main-padding-top);
     padding-bottom: var(--main-padding-bottom);
+    overflow-x: hidden;
 }
 .services .boxes {
     display: flex;
