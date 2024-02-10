@@ -56,6 +56,7 @@ a {
 }
 .container {
     padding: 0 calc(15 / var(--media-breakdown));
+    overflow-x: hidden;
 }
 .main-title {
     color: #fff;
@@ -81,6 +82,7 @@ a {
 }
 .main-title.show {
     transform: translateX(0);
+    overflow-x: hidden;
 }
 /* End Global Rules */
 
