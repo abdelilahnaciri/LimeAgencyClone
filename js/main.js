@@ -19,10 +19,10 @@ window.addEventListener('scroll', main_titles);
 main_titles();
 
 function main_titles() {
-    const triggerBottom = window.innerHeight / 5 * 4 + 100;
+    const triggerBottom = Math.ceil(window.innerHeight / 5 * 3 + 190);
     mainTitle.forEach(title => {
         const titleTop = title.getBoundingClientRect().top;
-        if (titleTop < triggerBottom) {
+        if (titleTop <= triggerBottom) {
             title.classList.add('show');
         }
         else {

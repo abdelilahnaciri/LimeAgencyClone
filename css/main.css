@@ -68,7 +68,7 @@ a {
     padding-bottom: calc(5 / var(--media-breakdown));
     background: url("../imgs/title-decor.svg") no-repeat center bottom;
     transition: var(--main-transition);
-    margin-bottom: calc(20 / var(--media-breakdown));
+    margin-bottom: 60px;
     transform: translateX(100%);
 }
 @media (max-width: 991px) {
