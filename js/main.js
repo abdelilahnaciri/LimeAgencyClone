@@ -6,7 +6,7 @@ document.querySelectorAll(".menu").forEach(n => n.addEventListener("click", () =
         menuList.style.left = "0";
         menuList.style.top = "10px";
         menuList2.style.left = "0";
-        menuList2.style.top = "170px";
+        menuList2.style.top = "169px";
         menuList2.style.paddingTop = "0";
     }
     else {
