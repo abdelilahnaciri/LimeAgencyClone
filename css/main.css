@@ -82,6 +82,15 @@ a {
 .main-title.show {
     transform: translateX(0);
 }
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background-color: #f6f6f6;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
 /* End Global Rules */
 
 /* Start Header */
