@@ -4,8 +4,9 @@ var menuList2 = document.querySelectorAll(".menu_list")[1];
 document.querySelectorAll(".menu").forEach(n => n.addEventListener("click", () => {
     if (!Boolean(menuList.style.left)) {
         menuList.style.left = "0";
+        menuList.style.top = "10px";
         menuList2.style.left = "0";
-        menuList2.style.top = "159px";
+        menuList2.style.top = "170px";
         menuList2.style.paddingTop = "0";
     }
     else {
