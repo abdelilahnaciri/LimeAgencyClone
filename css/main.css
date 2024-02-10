@@ -96,25 +96,14 @@ body {
     position: fixed;
     width: 100%;
     padding-top: 20px;
-
+    z-index: 999;
 }
 .header.active {
     background-color: #131626;
-    z-index: 999;
     transition: 1s;
     transform: translateY(-30px);
     padding-top: 25px;
 }
-/* .header.active::before {
-    position: absolute;
-    content: "";
-    background-color: #131626;
-    width: 100%;
-    height: 100%;
-    
-    transition: 1s;
-
-} */
 .header .container {
     height: 75px;
     display: flex;
@@ -176,6 +165,9 @@ body {
     width: 100%;
 }
 @media screen and (max-width: 991px) and (min-height: 100px) {
+    .header {
+        padding-top: 10px;
+    }
     .menu {
         gap: 15px;
         width: 100%;
@@ -190,9 +182,9 @@ body {
     .menu .menu_list{
         position: absolute;
         width: 100%;
-        top: 0;
+        top: 50px;
         left: -100%;
-        background-color: #131625bf;
+        background-color: #131625ed;
         flex-wrap: wrap;
         z-index: 3;
         flex-direction: column;
@@ -320,6 +312,9 @@ body {
 
 }
 @media screen and (max-width: 991px) and (min-height: 100px) {
+    .landing {
+        padding-top: 75px;
+    }
     .landing .hero_header h1 {
         -webkit-text-fill-color: var(--main-color);
         -webkit-text-stroke-width: 0;
