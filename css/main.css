@@ -56,7 +56,7 @@ a {
 }
 .container {
     padding: 0 calc(15 / var(--media-breakdown));
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .main-title {
     color: #fff;
