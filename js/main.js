@@ -13,9 +13,27 @@ document.querySelectorAll(".menu").forEach(n => n.addEventListener("click", () =
         menuList2.removeAttribute('style');
     }
 }))
+
+const mainHeader = document.querySelectorAll('.header');
+window.addEventListener('scroll', main_header);
+main_header();
+
+function main_header() {
+    let triggerBottom = window.scrollY;
+    console.log(triggerBottom);
+    mainHeader.forEach(header => {
+        const headerTop = header.getBoundingClientRect().bottom;
+        if (triggerBottom > 100) {
+            header.classList.add('active');
+        }
+        else {
+            header.classList.remove('active');
+        }
+    })
+}
+
 const mainTitle = document.querySelectorAll('.main-title');
 window.addEventListener('scroll', main_titles);
-
 main_titles();
 
 function main_titles() {
