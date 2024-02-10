@@ -21,7 +21,6 @@ main_header();
 
 function main_header() {
     let triggerBottom = window.scrollY;
-    console.log(triggerBottom);
     mainHeader.forEach(header => {
         const headerTop = header.getBoundingClientRect().bottom;
         if (triggerBottom > 100) {
@@ -46,6 +45,23 @@ function main_titles() {
         }
         else {
             title.classList.remove('show');
+        }
+    })
+}
+
+const secTitle = document.querySelectorAll('.sec-title');
+window.addEventListener('scroll', sec_title);
+sec_title();
+
+function sec_title() {
+    let triggerBottom = Math.ceil(window.innerHeight / 5 * 4);
+    secTitle.forEach(title => {
+        const secTitleTop = title.getBoundingClientRect().top;
+        if (secTitleTop <= triggerBottom) {
+            title.classList.add('sec-show');
+        }
+        else {
+            title.classList.remove('sec-show');
         }
     })
 }

@@ -344,6 +344,10 @@ body {
     transition: var(--main-transition);
     margin-bottom: calc(20 / var(--media-breakdown));
     position: relative;
+    transform: translateX(-100%);
+}
+.services .boxes .box h2.sec-show {
+    transform: translate(0);
 }
 .services .boxes .box h2::before {
     position: absolute;
