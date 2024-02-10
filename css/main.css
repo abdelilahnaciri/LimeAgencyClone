@@ -84,6 +84,7 @@ a {
 }
 ::-webkit-scrollbar {
     width: 6px;
+    height: 5px;
 }
 ::-webkit-scrollbar-track {
     background-color: #c2c2c2;
@@ -432,6 +433,104 @@ body {
     }
 }
 /* End Services */
+/* Start Advantages */
+.advantages {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    background: url('../imgs/advantages-bg.webp') no-repeat;
+    position: relative;
+}
+.advantages::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("../imgs/advantages-blocks-bg.png") repeat;
+    background-size: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.advantages .container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 98%;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+.advantages .boxes {
+    display: flex;
+    gap: 45px;
+    padding: 300px 50px 0;
+    position: relative;
+    width: 100%;
+}
+.advantages .box {
+position: relative;
+z-index: 999;
+color: #fff;
+min-width: 120px;
+width: 120px;
+height: 120px;
+display: flex;
+justify-content: center;
+align-items: center;
+transform-origin: center center;
+transform: rotate(45deg);
+bottom: 0;
+
+}
+.advantages .box::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 10px;
+    background: url("../imgs/advantages-box-bg.png");
+    border: 10px solid #131626;
+    transition: var(--main-transition);
+}
+.advantages .box:hover::before {
+    box-shadow: 0 0 15px 10px var(--main-color);
+}
+.advantages .box:nth-of-type(even) {
+    bottom: 210px;
+    min-width: 200px;
+    min-height: 200px;
+}
+.advantages .box .info {
+    z-index: 999;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(-45deg);
+}
+.advantages .box .info h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.advantages .box .info p {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    width: 150px;
+    color: #4d547b;
+}
+.advantages .box:nth-of-type(even) .info p {
+    font-size: 14px;
+    width: 200px;
+}
+/* End Advantages */
 /* Start Animation */
 @keyframes load__scale {
     0% {
