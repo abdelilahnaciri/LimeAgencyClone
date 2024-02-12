@@ -30,6 +30,7 @@ function main_header() {
             header.classList.remove('active');
         }
     })
+    // console.log(triggerBottom);
 }
 
 const mainTitle = document.querySelectorAll('.main-title');
@@ -64,4 +65,21 @@ function sec_title() {
             title.classList.remove('sec-show');
         }
     })
+}
+
+const boxShow = document.querySelectorAll('.adv-show');
+window.addEventListener('scroll', box_show);
+box_show();
+function box_show() {
+    let triggerBottom = window.scrollY;
+    boxShow.forEach(boxShow => {
+        const boxShowTop = boxShow.getBoundingClientRect().bottom;
+        if (triggerBottom > 1400) {
+            boxShow.classList.add('show-box');
+        }
+        else if (triggerBottom < 800){
+            boxShow.classList.remove('show-box');
+        }
+    })
+    
 }
