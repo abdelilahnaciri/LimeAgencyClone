@@ -440,6 +440,7 @@ body {
     background: url('../imgs/advantages-bg.webp') no-repeat;
     background-size: 100%;
     position: relative;
+    overflow-x: hidden;
 }
 .advantages::before {
     position: absolute;
