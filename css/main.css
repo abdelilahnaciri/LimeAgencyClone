@@ -549,6 +549,9 @@ body {
 .advantages .boxes .box.show-box{
     animation: show 1.3s forwards, shining 6s;
 }
+.advantages .box.show-box .frame::before {
+    animation: rotate 3s ease;
+}
 .advantages .box.show-box:nth-of-type(even) {
     animation-delay: .5s;
 }
