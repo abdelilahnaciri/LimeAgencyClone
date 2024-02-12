@@ -97,7 +97,7 @@ a {
 /* Start Header */
 body {
     /* background-color: #000; */
-    background: #131626 url("../imgs/hero-bg.png") no-repeat top left;
+    background: #131626 url("../imgs/hero-bg.png") repeat top left;
     background-size: cover;
     overflow-x: hidden;
 }
