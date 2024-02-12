@@ -37,7 +37,7 @@ window.addEventListener('scroll', main_titles);
 main_titles();
 
 function main_titles() {
-    const triggerBottom = Math.ceil(window.innerHeight / 5 * 4);
+    const triggerBottom = Math.ceil(window.innerHeight / 5 * 4 + 100);
     mainTitle.forEach(title => {
         const titleTop = title.getBoundingClientRect().top;
         if (titleTop <= triggerBottom) {
@@ -54,7 +54,7 @@ window.addEventListener('scroll', sec_title);
 sec_title();
 
 function sec_title() {
-    let triggerBottom = Math.ceil(window.innerHeight / 5 * 4);
+    let triggerBottom = Math.ceil(window.innerHeight / 5 * 4 + 50);
     secTitle.forEach(title => {
         const secTitleTop = title.getBoundingClientRect().top;
         if (secTitleTop <= triggerBottom) {
