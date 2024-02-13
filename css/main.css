@@ -754,7 +754,7 @@ body {
     align-self: flex-start;
     margin-left: calc(50% / 2);
     position: relative;
-    z-index: 999;
+    z-index: 1;
 }
 .about .box-info .quote::before {
     content: "";
