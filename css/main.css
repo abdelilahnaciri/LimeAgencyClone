@@ -639,8 +639,7 @@ body {
     /* overflow-x: scroll; */
 }
 .artworks .cards .card {
-    min-height: 500px;
-    min-width: 900px;
+    height: 600px;
     position: relative;
     margin-right: 50px;
     color: #fff;
@@ -694,6 +693,26 @@ body {
 }
 .artworks .info p span {
     display: block;
+}
+@media (max-width: 767px) {
+    .artworks .info {
+        width: 100%;
+    }
+    .artworks .cards .card {
+        height: 400px;
+    }
+    .artworks .info h3 {
+        font-size: 20px;
+    }
+    .artworks .info h3::before {
+        width: 150px;
+    }
+    .artworks .info p {
+        font-size: 12px;
+    }
+    .artworks .info p:not(:last-child) {
+        margin-bottom: 5px;
+    }
 }
 .artworks .swiper-pagination {
     position: relative;
