@@ -450,7 +450,7 @@ body {
     background: url('../imgs/advantages-bg.webp') no-repeat;
     background-size: 100%;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .advantages::before {
     position: absolute;
@@ -631,11 +631,12 @@ body {
 .artworks {
     padding-top: var(--main-padding-top);
     padding-bottom: var(--main-padding-bottom);
+    overflow: hidden;
 }
 .artworks .cards {
     display: flex;
     padding-left: 50px;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
 }
 .artworks .cards .card {
     min-height: 500px;
@@ -659,8 +660,10 @@ body {
     border-radius: 20px;
     object-fit: cover;
 }
-.artworks .card .info {
-    width: 50%;
+@media (min-width: 991px) {
+    .artworks .card .info {
+        width: 50%;
+    }
 }
 .artworks .info h3 {
     text-transform: uppercase;
@@ -691,6 +694,16 @@ body {
 }
 .artworks .info p span {
     display: block;
+}
+.artworks .swiper-pagination {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+.artworks .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #8f8fb1;
 }
 /* End Artworks */
 /* Start Animation */

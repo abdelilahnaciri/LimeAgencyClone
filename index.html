@@ -8,6 +8,8 @@
     <link rel="stylsheet" href="css/all.min.css">
     <!-- Render All Elements Normally-->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- Main Template CSS File -->
     <link rel="stylesheet" href="css/main.css">
     <!-- Google Fonts -->
@@ -146,10 +148,10 @@
     </div>
     <!-- End Advantages -->
     <!-- Start Art Works -->
-    <div class="artworks">
+    <div class="artworks mySwiper">
         <h2 class="main-title">Our Art Works</h2>
-        <div class="cards">
-            <div class="card">
+        <div class="cards swiper-wrapper">
+            <div class="card swiper-slide">
                 <img src="imgs/card-01.jpeg" alt="img">
                 <div class="info">
                     <h3>The Mystical Jungle</h3>
@@ -157,7 +159,7 @@
                     <p>When creating such beautiful illustrations, our artists were inspired by the idea of bringing these whimsical monsters to life. Are you ready for an immersive ride through a mythical world with extraordinary slots?</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card swiper-slide">
                 <img src="imgs/card-02.jpeg" alt="img">
                 <div class="info">
                     <h3>Fights of Galaxies</h3>
@@ -165,7 +167,7 @@
                     <p>Fights of Galaxies is a great opportunity to break away from problems and punish opponents on the battle arena.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card swiper-slide">
                 <img src="imgs/card-03.jpeg" alt="img">
                 <div class="info">
                     <h3>Middle Ages</h3>
@@ -176,7 +178,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card swiper-slide">
                 <img src="imgs/card-04.jpeg" alt="img">
                 <div class="info">
                     <h3>Rollete</h3>
@@ -187,7 +189,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card swiper-slide">
                 <img src="imgs/card-05.png" alt="img">
                 <div class="info">
                     <h3>Aztecs</h3>
@@ -198,7 +200,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card swiper-slide">
                 <img src="imgs/card-06.jpeg" alt="img">
                 <div class="info">
                     <h3>Poker Havana</h3>
@@ -210,9 +212,14 @@
                 </div>
             </div>
         </div>
+        <div class="swiper-pagination"></div>
     </div>
     <!-- End Art Works -->
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f373cd81dd.js" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Main Script -->
     <script src="js/main.js"></script>
 </body>
 </html>
