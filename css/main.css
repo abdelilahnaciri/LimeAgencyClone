@@ -499,7 +499,7 @@ body {
     }
     .advantages .container {
         overflow: auto;
-        width: 98%;
+        width: 100%;
     }
     .advantages .boxes {
         column-gap: 300px;
@@ -513,7 +513,8 @@ body {
     }
     .advantages .container {
         overflow: auto;
-        width: 98%;
+        width: 100%;
+        margin-top: 150px;
     }
     .advantages .boxes {
         column-gap: 300px;
