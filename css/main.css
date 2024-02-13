@@ -726,6 +726,149 @@ body {
     background-color: #8f8fb1;
 }
 /* End Artworks */
+/* Start About */
+.about {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    background: url("../imgs/advantages-bg.webp");
+    background-size: cover;
+}
+.about .about-boxes {
+    display: flex;
+    position: relative;
+}
+.about .box-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.about .box-info .quote {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    background-color: #20253b;
+    padding: 6px 50px 6px 10px;
+    border-radius: 30px;
+    align-self: flex-start;
+    margin-left: calc(50% / 2);
+    position: relative;
+    z-index: 999;
+}
+.about .box-info .quote::before {
+    content: "";
+    position: absolute;
+    border: 20px solid;
+    border-color: #20253b transparent transparent;
+    right: 15px;
+    bottom: -20px;
+    transform: rotate(80deg);
+    z-index: -1;
+    border-radius: 10px;
+}
+.about .quote .image img {
+    border-radius: 50%;
+}
+.about .quote  p {
+    color: #fff;
+    font-size: 15px;
+    color: #b7bbcd;
+    font-family: "AvenirNextCyr", sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+}
+.about .about-title {
+    color: #fff;
+    width: fit-content;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: calc(65 / var(--media-breakdown));
+    z-index: 1;
+    line-height: 1;
+    padding: 0 calc(45 / var(--media-breakdown));
+    position: relative;
+}
+.about .about-title::before,
+.about .about-title::after {
+    position: absolute;
+    content: "\"";
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px #686e8a;
+}
+.about .about-title::before {
+    left: 0;
+    top: 0;
+}
+.about .about-title::after {
+    right: 0;
+    bottom: 0;
+}
+.about .about-title span {
+    display: block;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px #606580;
+    margin-left: -100px;
+}
+.about .text {
+    width: 50%;
+    color: #606580;
+    font-size: 14.5px;
+    line-height: 1.7;
+}
+.about .text p:not(:last-child) {
+    margin-bottom: 15px;
+}
+.about .about-boxes .box-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: .5;
+}
+@media (min-width: 2000px) {
+    .about .about-title {
+        font-size: 230px;
+        padding-right: 140px;
+    }
+    .about .text {
+        font-size: 20px;
+    }
+}
+@media (max-width: 991px) {
+    .about .text {
+        width: 80%;
+    }
+    .about .about-title {
+        font-size: 80px;
+    }
+    .about .about-title::before,
+    .about .about-title span, 
+    .about .about-title::after {
+        -webkit-text-stroke-width: 1px;
+        margin-left: 0px;
+    }
+    .about .about-boxes .box-image {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .about .quote  p {
+        font-size: 14px;
+    }
+    .about .about-title {
+        font-size: 40px;
+    }
+}
+@media (max-width: 359px) {
+    .about .quote  p {
+        font-size: 10px;
+    }
+    .about .about-title {
+        font-size: 30px;
+    }
+}
+/* End About */
 /* Start Animation */
 @keyframes load__scale {
     0% {
@@ -781,13 +924,13 @@ body {
      transform: translateY(45deg);
      opacity: 1;
     }
- }
- @keyframes shining {
-     0%, 100% {
-         box-shadow: none;
-     }
-     50% {
-         box-shadow: 0 0 10px 0 var(--main-color);
-     }
- }
+}
+@keyframes shining {
+    0%, 100% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 10px 0 var(--main-color);
+    }
+}
 /* End Animation */
