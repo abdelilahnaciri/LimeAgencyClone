@@ -38,7 +38,7 @@ window.addEventListener('scroll', main_titles);
 main_titles();
 
 function main_titles() {
-    const triggerBottom = Math.ceil(window.innerHeight / 5 * 4 + 100);
+    const triggerBottom = Math.ceil(window.innerHeight / 5 * 4);
     mainTitle.forEach(title => {
         const titleTop = title.getBoundingClientRect().top;
         if (titleTop <= triggerBottom) {
@@ -55,7 +55,7 @@ window.addEventListener('scroll', sec_title);
 sec_title();
 
 function sec_title() {
-    let triggerBottom = Math.ceil(window.innerHeight / 5 * 4 + 50);
+    let triggerBottom = Math.ceil(window.innerHeight / 5 * 4);
     secTitle.forEach(title => {
         const secTitleTop = title.getBoundingClientRect().top;
         if (secTitleTop <= triggerBottom) {
@@ -83,3 +83,17 @@ function box_show() {
     })
     
 }
+// Swiper script for sliders
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
