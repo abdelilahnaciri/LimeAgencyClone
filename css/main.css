@@ -755,6 +755,7 @@ body {
     margin-left: calc(50% / 2);
     position: relative;
     z-index: 1;
+    animation: load__fadeup 2s;
 }
 .about .box-info .quote::before {
     content: "";
@@ -789,6 +790,7 @@ body {
     line-height: 1;
     padding: 0 calc(45 / var(--media-breakdown));
     position: relative;
+    animation: load__fadeup__left 2s;
 }
 .about .about-title::before,
 .about .about-title::after {
@@ -816,6 +818,7 @@ body {
     color: #606580;
     font-size: 14.5px;
     line-height: 1.7;
+    animation: load__fadeup 3s;
 }
 .about .text p:not(:last-child) {
     margin-bottom: 15px;
@@ -825,6 +828,29 @@ body {
     right: 0;
     top: 0;
     opacity: .5;
+}
+.about .about-boxes .box-image img {
+    animation: load__fadeup__right 2s;
+}
+@keyframes load__fadeup__right {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes load__fadeup__left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 @media (min-width: 2000px) {
     .about .about-title {
