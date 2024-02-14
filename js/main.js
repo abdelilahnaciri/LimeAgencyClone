@@ -89,11 +89,28 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     loop: true,
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    el: ".swiper-pagination",
+    clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
     },
-  });
+});
+// Start About shining
+const aboutBoxes = document.querySelectorAll('.show-about');
+window.addEventListener('scroll', about_show);
+about_show();
+function about_show() {
+    let triggerBottom = window.scrollY;
+    aboutBoxes.forEach(aboutBoxes => {
+        const aboutBoxesTop = aboutBoxes.getBoundingClientRect().bottom;
+        if (triggerBottom > 3130) {
+            aboutBoxes.classList.add('show-about');
+        }
+        else if (triggerBottom < 2300){
+            aboutBoxes.classList.remove('show-about');
+        }
+    })
+}
+// End About shining

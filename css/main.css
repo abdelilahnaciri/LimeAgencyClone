@@ -755,7 +755,10 @@ body {
     margin-left: calc(50% / 2);
     position: relative;
     z-index: 1;
-    animation: load__fadeup 2s;
+    opacity: 0;
+}
+.about .box-info .quote.show-about {
+    animation: load__fadeup 2s forwards;
 }
 .about .box-info .quote::before {
     content: "";
@@ -790,7 +793,10 @@ body {
     line-height: 1;
     padding: 0 calc(45 / var(--media-breakdown));
     position: relative;
-    animation: load__fadeup__left 2s;
+    opacity: 0;
+}
+.about .about-title.show-about {
+    animation: load__fadeup__left 2s forwards;
 }
 .about .about-title::before,
 .about .about-title::after {
@@ -818,7 +824,10 @@ body {
     color: #606580;
     font-size: 14.5px;
     line-height: 1.7;
-    animation: load__fadeup 3s;
+    opacity: 0;
+}
+.about .text.show-about {
+    animation: load__fadeup 1s forwards;
 }
 .about .text p:not(:last-child) {
     margin-bottom: 15px;
@@ -830,7 +839,10 @@ body {
     opacity: .5;
 }
 .about .about-boxes .box-image img {
-    animation: load__fadeup__right 2s;
+    opacity: 0;
+}
+.about .about-boxes .box-image img.show-about {
+    animation: load__fadeup__right 2s forwards;
 }
 @keyframes load__fadeup__right {
     0% {
