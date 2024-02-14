@@ -108,9 +108,103 @@ function about_show() {
         if (triggerBottom > 3130) {
             aboutBoxes.classList.add('show-about');
         }
-        else if (triggerBottom < 2300){
+        else if (triggerBottom < 2445){
             aboutBoxes.classList.remove('show-about');
         }
     })
 }
 // End About shining
+
+// Swiper script slideer for portfolio
+// const carousel = document.querySelector('.carousel');
+
+// let isDragging = false, startX, startScrollLeft;
+
+// const dragStart = (e) => {
+//     isDragging = true;
+//     carousel.classList.add("dragging");
+//     startX = e.pageX;
+//     startScrollLeft = carousel.scrollLeft;
+// }
+
+// const dragging = (e) => {
+//     console.log(e.pageX);
+//     if(!isDragging) return;
+//     carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+// }
+
+// const dragStop = () => {
+//     isDragging = false;
+//     carousel.classList.remove("dragging");
+// }
+
+// carousel.addEventListener("mousedown", dragStart);
+// carousel.addEventListener("mousemove", dragging);
+// carousel.addEventListener("mousup", dragStop);
+
+/*=============== SWIPER JS ===============*/
+
+var swiper = new Swiper(".swiper", {
+    slidesPerView: 5,
+    spaceBetween: 0,
+    loop: true,
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
+    breakpoints:{
+    100: {
+        slidesPerView: 1,
+    },
+    600: {
+        slidesPerView: 2,
+    },
+    968: {
+        slidesPerView: 5,
+    },
+},
+});
+
+var test = document.getElementsByClassName("div.swiper-swiper-slide-active");
+// var test = document.querySelector('.swiper-pagination-bullet swiper-pagination-bullet-active');
+// var value = test.getElementsByClassName('.swiper-pagination-bullet-active');
+console.log(test);
+test.style.paddingTop = "1000px";
+
+
+
+
+
+
+// let swiperCards = new Swiper(".swiper", {
+//     loop: true,
+//     spaceBetween: 0,
+//     grabCursor: true,
+
+//     pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//     dynamicBullets: true,
+//     },
+
+//     navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//     },
+
+//     breakpoints:{
+//     300: {
+//         slidesPerView: 1.5,
+//     },
+//     600: {
+//         slidesPerView: 2,
+//     },
+//     968: {
+//         slidesPerView: 5,
+//     },
+//     },
+// });
