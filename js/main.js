@@ -169,11 +169,47 @@ var swiper = new Swiper(".swiper", {
 },
 });
 
-var test = document.getElementsByClassName("div.swiper-swiper-slide-active");
+// var test = document.querySelector(".all-portfolio");
 // var test = document.querySelector('.swiper-pagination-bullet swiper-pagination-bullet-active');
 // var value = test.getElementsByClassName('.swiper-pagination-bullet-active');
-console.log(test);
-test.style.paddingTop = "1000px";
+// window.addEventListener('click', hide_effect);
+
+// hide_effect();
+
+// function hide_effect() {
+
+// }
+var test = document.querySelector(".all-portfolio");
+document.querySelectorAll(".all-portfolio").forEach(n => n.addEventListener("click", () => {
+    var active = test.querySelector(".swiper-slide-active");
+    console.log(active.classList.value);
+    //active.classList.contains("swiper-slide-active")
+    if (active.classList.value == "box swiper-slide swiper-slide-active") {
+        active.querySelector(".portfolio-title").style.visiblity="visible";
+        var hidden = active.querySelector(".portfolio-title");
+        var hidden1 = active.querySelector(".portfolio-title");
+        console.log(active.attributes[4].value - 1);
+        if (hidden.style.visibility=="hidden") {
+            hidden.style.visibility="visible";
+        }
+        hidden.style.visibility="hidden";
+        var last = active.attributes[4].value - 1;
+        active.attributes[4].value
+    }
+    else {
+        var hidden = active.querySelector(".portfolio-title");
+        hidden.style.visibility="visible";
+    }
+
+}))
+
+// console.log(test);
+// var active = test.querySelector(".swiper-slide-active");
+// var hidden = active.querySelector(".portfolio-title");
+// console.log(hidden);
+// hidden.style.visibility="hidden";
+
+// active.style.paddingTop = "1000px";
 
 
 

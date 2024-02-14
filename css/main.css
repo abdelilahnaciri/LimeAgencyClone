@@ -969,6 +969,9 @@ body {
     transform: skew(6deg);
     position: relative;
 }
+/* .portfolio .portfolio-title {
+    visibility: visible;
+} */
 .portfolio .box .portfolio-title h3::before {
     position: absolute;
     content: "";
