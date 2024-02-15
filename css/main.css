@@ -1060,9 +1060,6 @@ body {
     color: #fff;
     padding: 30px 20px;
 }
-.banner .info {
-    
-}
 .banner .info h2 {
     font-family: "Libre Franklin", sans-serif;
     width: calc(200 / var(--media-breakdown));

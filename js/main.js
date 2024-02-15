@@ -185,10 +185,8 @@ hide_effect();
 function hide_effect() {
     var title = document.querySelectorAll(".portfolio-title");
     var active = test.querySelectorAll(".box");
-    console.log(active);
     let i = 0;
     while (i < 11) {
-        console.log(title[i]);
         active[i].style.transition="0.6s";
         title[i].style.visibility="visible";
         active[i].style.top = "0px"
