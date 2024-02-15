@@ -1075,6 +1075,14 @@ body {
     letter-spacing: 2px;
     line-height: 1;
 }
+@media (max-width: 767px) {
+    .banner .info {
+        text-align: center;
+    }
+    .banner .info h2 {
+        font-size: calc(50 / var(--media-breakdown));
+    }
+}
 .banner .info h2 span {
     display: block;
     -webkit-text-fill-color: transparent;
@@ -1082,7 +1090,7 @@ body {
 }
 .banner .info p {
     color: #d5caef;
-    width: 500px;
+    width: calc(200 / var(--media-breakdown));
     line-height: 1.8;
     font-size: 15px;
     letter-spacing: 1.5px;
