@@ -202,9 +202,22 @@ function hide_effect() {
 }
 // End Portfolio Hiding Effect
 
-
-
-
+const bannerBoxes = document.querySelectorAll('.banner-fade');
+window.addEventListener('scroll', banner_show);
+banner_show();
+function banner_show() {
+    let triggerBottom = window.scrollY;
+    bannerBoxes.forEach(bannerBoxes => {
+        console.log(triggerBottom);
+        const bannerBoxesTop = bannerBoxes.getBoundingClientRect().bottom;
+        if (triggerBottom > 4500) {
+            bannerBoxes.classList.add('banner-fade');
+        }
+        else if (triggerBottom < 4100){
+            bannerBoxes.classList.remove('banner-fade');
+        }
+    })
+}
 
 
 // let swiperCards = new Swiper(".swiper", {
