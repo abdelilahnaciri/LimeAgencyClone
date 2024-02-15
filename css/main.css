@@ -951,7 +951,6 @@ body {
     justify-content: center;
     padding: 30px;
     text-align: center;
-    
 }
 .portfolio .boxes .box .portfolio-title h3 {
     color: #fff;
@@ -964,11 +963,6 @@ body {
     transform: skew(6deg);
     position: relative;
 }
-/* .portfolio .portfolio-title.hide {
-    visibility: hidden;
-    height: calc(100% + 100px);
-    transform: translateY(500px);
-} */
 .portfolio .box .portfolio-title h3::before {
     position: absolute;
     content: "";
