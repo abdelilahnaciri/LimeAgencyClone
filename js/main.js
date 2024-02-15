@@ -179,29 +179,77 @@ var swiper = new Swiper(".swiper", {
 // function hide_effect() {
 
 // }
-var test = document.querySelector(".all-portfolio");
-document.querySelectorAll(".all-portfolio").forEach(n => n.addEventListener("click", () => {
-    var active = test.querySelector(".swiper-slide-active");
-    console.log(active.classList.value);
-    //active.classList.contains("swiper-slide-active")
-    if (active.classList.value == "box swiper-slide swiper-slide-active") {
-        active.querySelector(".portfolio-title").style.visiblity="visible";
-        var hidden = active.querySelector(".portfolio-title");
-        var hidden1 = active.querySelector(".portfolio-title");
-        console.log(active.attributes[4].value - 1);
-        if (hidden.style.visibility=="hidden") {
-            hidden.style.visibility="visible";
-        }
-        hidden.style.visibility="hidden";
-        var last = active.attributes[4].value - 1;
-        active.attributes[4].value
-    }
-    else {
-        var hidden = active.querySelector(".portfolio-title");
-        hidden.style.visibility="visible";
-    }
+// var test = document.querySelector(".all-portfolio");
+// document.querySelectorAll(".all-portfolio").forEach(n => n.addEventListener("click", () => {
+//     var active = test.querySelector(".swiper-slide-active");
+//     console.log(active.classList.value);
+//     //active.classList.contains("swiper-slide-active")
+//     if (active.classList.value == "box swiper-slide swiper-slide-active") {
+//         active.querySelector(".portfolio-title").style.visiblity="visible";
+//         var hidden = active.querySelector(".portfolio-title");
+//         var hidden1 = active.querySelector(".portfolio-title");
+//         console.log(active.attributes[4].value - 1);
+//         if (hidden.style.visibility=="hidden") {
+//             hidden.style.visibility="visible";
+//         }
+//         hidden.style.visibility="hidden";
+//         var last = active.attributes[4].value - 1;
+//         active.attributes[4].value
+//     }
+//     else {
+//         var hidden = active.querySelector(".portfolio-title");
+//         hidden.style.visibility="visible";
+//     }
 
-}))
+// }))
+
+var test = document.querySelector(".all-portfolio");
+window.addEventListener('click', hide_effect);
+window.addEventListener('mousemove', hide_effect);
+hide_effect();
+function hide_effect() {
+    var title = document.querySelectorAll(".portfolio-title");
+    var active = test.querySelectorAll(".box");
+    console.log(active);
+    let i = 0;
+    while (i < 11) {
+        console.log(title[i]);
+        // console.log(active[i].classList.value == "box swiper-slide swiper-slide-active");
+        active[i].style.transition="0.6s";
+        title[i].style.visibility="visible";
+        active[i].style.top = "0px"
+        active[i].style.boxShadow = "none"
+        if(active[i].classList.value == "box swiper-slide swiper-slide-active") {
+            title[i].style.visibility="hidden";
+            active[i].style.position = "relative"
+            active[i].style.boxShadow = "0 2px 15px 0 var(--main-color)"
+            active[i].style.top = "-50px"
+        }
+        i++;
+    }
+}
+
+// document.querySelectorAll(".all-portfolio").forEach(n => n.addEventListener("mousemove", () => {
+//     var title = document.querySelectorAll(".portfolio-title");
+//     var active = test.querySelectorAll(".box");
+//     console.log(active);
+//     let i = 0;
+//     while (i < 11) {
+//         console.log(title[i]);
+//         // console.log(active[i].classList.value == "box swiper-slide swiper-slide-active");
+//         active[i].style.transition="0.3s";
+//         title[i].style.visibility="visible";
+//         active[i].style.top = "0px"
+//         if(active[i].classList.value == "box swiper-slide swiper-slide-active") {
+//             title[i].style.visibility="hidden";
+//             active[i].style.position = "relative"
+//             active[i].style.top = "-50px"
+//             active[i].style.boxShadow = "0 0 10px 0 #000"
+//         }
+//         i++;
+//     }
+
+// }))
 
 // console.log(test);
 // var active = test.querySelector(".swiper-slide-active");
