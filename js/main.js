@@ -208,7 +208,6 @@ banner_show();
 function banner_show() {
     let triggerBottom = window.scrollY;
     bannerBoxes.forEach(bannerBoxes => {
-        console.log(triggerBottom);
         const bannerBoxesTop = bannerBoxes.getBoundingClientRect().bottom;
         if (triggerBottom > 4500) {
             bannerBoxes.classList.add('banner-fade');
@@ -219,6 +218,22 @@ function banner_show() {
     })
 }
 
+
+const contactBoxes = document.querySelectorAll('.contact-fade');
+window.addEventListener('scroll', contact_show);
+contact_show();
+function contact_show() {
+    let triggerBottom = window.scrollY;
+    contactBoxes.forEach(contactBoxes => {
+        const contactBoxesTop = contactBoxes.getBoundingClientRect().bottom;
+        if (triggerBottom > 5100) {
+            contactBoxes.classList.add('contact-fade');
+        }
+        else if (triggerBottom < 4700){
+            contactBoxes.classList.remove('contact-fade');
+        }
+    })
+}
 
 // let swiperCards = new Swiper(".swiper", {
 //     loop: true,
