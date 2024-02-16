@@ -217,8 +217,6 @@ function banner_show() {
         }
     })
 }
-
-
 const contactBoxes = document.querySelectorAll('.contact-fade');
 window.addEventListener('scroll', contact_show);
 contact_show();
@@ -226,7 +224,7 @@ function contact_show() {
     let triggerBottom = window.scrollY;
     contactBoxes.forEach(contactBoxes => {
         const contactBoxesTop = contactBoxes.getBoundingClientRect().bottom;
-        if (triggerBottom > 5400) {
+        if (triggerBottom > 5300) {
             contactBoxes.classList.add('contact-fade');
         }
         else if (triggerBottom < 4700){

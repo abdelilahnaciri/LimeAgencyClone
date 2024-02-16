@@ -1008,15 +1008,12 @@ body {
 /* End Portfolio */
 /* Start Banner */
 .banner {
-    padding-top: var(--main-padding-top);
-    padding-bottom: var(--main-padding-bottom);
     opacity: 0;
 }
 .banner .boxes {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     background: #4d20be url("../imgs/banner-bg.png") no-repeat center/cover;
     border-radius: 10px;
     position: relative;
@@ -1047,8 +1044,6 @@ body {
 .banner .info h2 {
     font-family: "Libre Franklin", sans-serif;
     width: calc(200 / var(--media-breakdown));
-    /* width: 1px; */
-    /* font-size: 60px; */
     font-size: calc(25 / var(--media-breakdown));
     margin-bottom: 20px;
     font-weight: 900;
@@ -1057,14 +1052,6 @@ body {
     line-height: 1;
     background: url("../imgs/footer-h-decor.png") no-repeat left bottom;
     padding-bottom: 20px;
-}
-@media (max-width: 767px) {
-    .banner .info {
-        text-align: center;
-    }
-    .banner .info h2 {
-        font-size: calc(50 / var(--media-breakdown));
-    }
 }
 .banner .info h2 span {
     display: block;
@@ -1087,6 +1074,24 @@ body {
 .banner .image img {
     width: 500px;
     max-width: 100%;
+}
+@media (max-width: 767px) {
+    .banner .boxes {
+        flex-direction: column;
+    }
+    .banner .info {
+        text-align: center;
+    }
+    .banner .info h2 {
+        font-size: calc(50 / var(--media-breakdown));
+        width: calc(400 / var(--media-breakdown));
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner .info p {
+        width: calc(500 / var(--media-breakdown));
+        font-size: 14px;
+    }
 }
 /* End Banner */
 /* Start Contact Us */
