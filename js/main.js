@@ -226,10 +226,10 @@ function contact_show() {
     let triggerBottom = window.scrollY;
     contactBoxes.forEach(contactBoxes => {
         const contactBoxesTop = contactBoxes.getBoundingClientRect().bottom;
-        if (triggerBottom > 5100) {
+        if (triggerBottom > 5400) {
             contactBoxes.classList.add('contact-fade');
         }
-        else if (triggerBottom < 4800){
+        else if (triggerBottom < 4700){
             contactBoxes.classList.remove('contact-fade');
         }
     })

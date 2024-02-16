@@ -1095,6 +1095,7 @@ body {
     padding-bottom: var(--main-padding-bottom);
     background: url("../imgs/contact-bg.webp") no-repeat center/100% 100%;
     position: relative;
+    overflow: hidden;
 }
 .contact-us::before {
     position: absolute;
