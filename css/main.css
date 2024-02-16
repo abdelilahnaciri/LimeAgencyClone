@@ -1275,6 +1275,23 @@ body {
     font-weight: 300;
     letter-spacing: 1px;
     margin-top: 45px;
+    cursor: pointer;
+    z-index: 999;
+    position: relative;
+}
+.contact-us .box button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+    transition: var(--main-transition);
+}
+.contact-us .box button:hover::before {
+    height: 100%;
+    z-index: -1;
 }
 .contact-us .box button i {
     margin-left: 5px;
