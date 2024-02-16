@@ -229,7 +229,7 @@ function contact_show() {
         if (triggerBottom > 5100) {
             contactBoxes.classList.add('contact-fade');
         }
-        else if (triggerBottom < 4700){
+        else if (triggerBottom < 4800){
             contactBoxes.classList.remove('contact-fade');
         }
     })
