@@ -1088,12 +1088,14 @@ body {
     .banner .info h2 {
         font-size: calc(50 / var(--media-breakdown));
         width: calc(400 / var(--media-breakdown));
+        max-width: 200px;
         margin-left: auto;
         margin-right: auto;
         background-position: bottom center;
     }
     .banner .info p {
         width: calc(500 / var(--media-breakdown));
+        max-width: 200px;
         font-size: 14px;
     }
 }
