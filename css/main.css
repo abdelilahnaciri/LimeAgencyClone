@@ -1139,6 +1139,7 @@ body {
     margin-bottom: 30px;
     padding-bottom: 20px;
     background: url("../imgs/footer-title-line.png") no-repeat bottom left;
+    width: fit-content;
 }
 .contact-us .info h2 span {
     display: block;
