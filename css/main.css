@@ -911,6 +911,7 @@ body {
     transform: skew(-6deg);
     position: relative;
     border-radius: 15px;
+    cursor: grab;
 }
 .portfolio .boxes .box img {
     width: 100%;
@@ -1044,6 +1045,8 @@ body {
 .banner .info h2 {
     font-family: "Libre Franklin", sans-serif;
     width: calc(200 / var(--media-breakdown));
+    /* width: 1px; */
+    /* font-size: 60px; */
     font-size: calc(25 / var(--media-breakdown));
     margin-bottom: 20px;
     font-weight: 900;
@@ -1213,6 +1216,9 @@ body {
 }
 .contact-us .box .input .put {
     flex: 1;
+    position: relative;
+}
+.contact-us .input:nth-child(3) {
     position: relative;
 }
 .contact-us .input .put::before,
