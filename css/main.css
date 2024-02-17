@@ -1251,6 +1251,7 @@ body {
     caret-color: var(--main-color);
     transition: var(--main-transition);
     font-size: 15px;
+    color: #fff;
 }
 .contact-us .input input::placeholder,
 .contact-us .input textarea::placeholder {
